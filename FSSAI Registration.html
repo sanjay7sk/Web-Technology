@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FSSAI-Registration</title>
+    <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
+	<link rel="stylesheet" href="..\..\Styles\all-in-1-styles.css">
+    <!-- <link href="https://fonts.goggleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<style>
+		#registration{
+			background: linear-gradient(225deg, #52def5ee 0%, #9c51deee 50%, #733994ee 100%),url("fssai-bg.png") no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<header id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<a class="navbar-brand" href="..\..\home\home.html"><img src="..\..\Styles\images\logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars"></i>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#eligibility">Eligibility</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#process">Process</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#category">Category</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#ttk">FAQ's</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    </header>
+	<main>
+		<!-- Registration -->
+		<section id="registration">
+		<p class="text-center promo-title">Food License Registration</p>
+        <p class="text-center">Choose India's best Business service provider <span>Choose TaxDeck</span></p>
+
+        <div class="container">
+            <section class="row justify-content-center">
+                <section class="col-6">
+                    <form>
+                        <div class="form-group">
+                            <!-- <label for="ApplicantName">Applicant Name</label> -->
+                            <input type="text" class="form-control" Pattern="[a-zA-z]+" id="ApplicantName" name="name" placeholder="Applicant Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="Email1">Email address</label> -->
+                            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" name="email"
+                            	placeholder="Email address" Pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="number">Contact Number</label> -->
+                            <input type="tel" class="form-control" id="number" aria-describedby="emailHelp" name="number"
+                                placeholder="Contact Number" Pattern="[1-9]{1}[0-9]{9}" required>
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+						<button type="submit" class="btn btn-primary">SUBMIT</button>
+                    </form>
+                </section>
+            </section>
+        </div>
+        <img src="..\..\Styles\images\wave1.png" class="bottom-img"/>
+		</section>
+		<!-- Aside -->
+		<aside>
+			<div>
+				<h4>TAX DECK</h4>
+				<img src="..\..\Styles\images\logo.png">
+				<p><span>Food License</span><br/>Registration</p>
+			</div>
+			<article>
+				<form>
+					<input type="text" tabindex="-1" placeholder="Enter Applicant Name" Pattern="[a-zA-z]+" autocomplete required/>		
+					<input type="mail" tabindex="-1" placeholder="Enter Applicant Email" Pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" autocomplete required/>		
+					<input type="tel" tabindex="-1" placeholder="Enter Applicant Contact Number" Pattern="[1-9]{1}[0-9]{9}" autocomplete required/>
+					<button tabindex="-1" >Start Now</button>
+				</form>
+			</article>
+			<hr>
+		</aside>
+		<!-- Procedure -->
+		<section class="services" id="proc">
+			<h2 class="title">procedure for applying</h2>
+			<article id="procedures">
+				<article>
+					<i class="bi bi-list-check" id="iframe"></i>
+					<h3 class="sub-head">Fill Information</h3>
+					<p class="pro">We'll love to know about your company in our eazy to fill forms.</p>
+				</article>
+				<article>
+					<i class="bi bi-credit-card-2-front" id="iframe"></i>
+					<h3 class="sub-head">Make Payment</h3>
+					<p class="pro">Select the product as per your need and proceed to payment.</p>
+				</article>
+				<article>
+					<i class="bi bi-envelope-open" id="iframe"></i>
+					<h3 class="sub-head">Mail Documents</h3>
+					<p class="pro">Our Experts will assist you with any queries about documents.</p>
+				</article>
+				<article>
+					<i class="bi bi-people" id="iframe"></i>
+					<h3 class="sub-head">Sit Back and Relax</h3>
+					<p class="pro">Our passionate team will process your application in fastest time.</p>
+				</article>
+			</article>
+		</section>
+		<!-- Eligibility -->
+		<section class="services" id="eligibility">
+			<h2 class="title">who needs food license</h2>
+			<article id="criterias">
+				<h3 class="sub-head">All Bakeries and Restaurants</h3>
+				<h3 class="sub-head">Manufacturers and Processors</h3>
+				<h3 class="sub-head">Re-labeller and Re-packers</h3>
+				<h3 class="sub-head">Hawkers and Food Trucks</h3>
+				<h3 class="sub-head">Online Sellers</h3>
+				<h3 class="sub-head">All food related Businesses</h3>
+			</article>
+		</section>
+		<!-- Process -->
+		<section class="services" id="process">
+			<h2 class="title">what we do for you</h2>
+			<article id="pro">
+				<article>
+					<i class="bi bi-search" id="iframe"></i>
+					<h3 class="sub-head">Finding Right Category</h3>
+					<p>Our experts will find the right category of license. There are 3 categories : FSSAI Registration, 
+					State license and Central license. Based on your business needs we’ll assist you in finding the right
+					category of license for your business.</p>
+				</article>
+				<article>
+					<i class="bi bi-patch-check-fill" id="iframe"></i>
+					<h3 class="sub-head">Strong Application Drafting</h3>
+					<p>Our legal experts would draft a strong application. Since it takes 61 days to get the license approved 
+					by the department, it is important that an expert files your application to minimise the chances of rejection.</p>
+				</article>
+				<article>
+					<i class="bi bi-list-check" id="iframe"></i>
+					<h3 class="sub-head">Application Filling</h3>
+					<p>We’ll file the application with the concerned government departments. Our experts make sure that your application
+					is filed in the fastest time possible. </p>
+				</article>
+				<article>
+					<i class="bi bi-file-arrow-up-fill" id="iframe"></i>
+					<h3 class="sub-head">Follow up</h3>
+					<p>We’ll follow up with the government departments. This makes sure that your application is processed and is on 
+					top of their priority. We’ll also help in answering any query that they have. We’ll keep you updated on the same.</p>
+				</article>
+			</article>
+		</section>
+		<!-- Categories -->
+		<section class="services para-contents" id="category">
+			<h2 class="title">Categories</h2>
+			<article id="cat-blo">
+				<h4>Basic Registration</h4>
+				<h4>State License</h4>
+				<h4>Central License</h4>
+			</article>
+			<p>Our Experts will help in finding the right category for your business.</p>
+			<article>
+				<article>
+					<h4 class="sub-head">Basic License</h4>
+					<p>The Basic registration of food license is usually done for hawkers and businesses having sales 
+					of less than 12 lakhs. However in some cases the criteria is different. The government fees for 
+					Basic Registration is Rs. 100.</p>
+				</article>
+				<article>
+					<h4 class="sub-head">State License</h4>
+					<p>The State license is usually done for medium sized businesses having sales of more than 12 lakhs
+					but less than 20 crores. However in some cases the criteria is different. The government fees for 
+					State License can vary from 2000 to Rs. 5000.</p>
+				</article>
+				<article>
+					<h4 class="sub-head">Central License</h4>
+					<p>The Central license is usually required for large businesses with annual sales of more than 
+					Rs. 20 crores. It is also mandatory for some businesses like import export to get a central license. 
+					The government fees for Central License is Rs. 7500.</p>
+				</article>
+			</article>
+		</section>
+		<!-- Things To Know -->
+		<section class="services" id="ttk">
+			<h2 class="title">things to know</h2>
+			<article id="faq">
+				<article>
+					<p onclick="expand(this.id)" id="q1" class="question">Who needs a Food License?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p>
+					<p class="answer" id="a1">Every business that deals in any kind of food products is required to have a food license.</p>
+					<hr>
+				</article>
+				<article>
+					<p onclick="expand(this.id)" id="q2"  class="question">What is the government fees ?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p><hr>
+					<p class="answer" id="a2">The Government fees can range from Rs. 100 to Rs. 7500 depending on your business. For more 
+					clarification you can call us at +91 9928380610.</p>
+				</article>
+				<article>
+					<p onclick="expand(this.id)" id="q3"  class="question">Do I need multiple licenses for multiple products ?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p><hr>
+					<p class="answer" id="a3">No, One Premise having multiple kind of businesses is required to have one license only.</p>
+				</article>
+				<article>
+					<p onclick="expand(this.id)" id="q4"  class="question">What if I have operations in more than 1 state ?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p><hr>
+					<p class="answer" id="a4">If a Food business Operates has Operations in more than one state,
+					One additional central license for Head Office is required.</p>
+				</article>
+				<article>
+					<p onclick="expand(this.id)" id="q5"  class="question">Once taken, For how long is the Food license valid ?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p><hr>
+					<p class="answer" id="a5">Food License can be applied for 1 to 5 years. After Expiry the license needs to be renewed.</p>
+				</article>
+				<article>
+					<p onclick="expand(this.id)" id="q6"  class="question">I am an Importer. Where should be my address for Food License ?
+					<i class="fa fa-plus"></i><i class="fa fa-minus"></i></p><hr>
+					<p class="answer" id="a6">License of Importers should be at their IE code address</p>
+				</article>
+			</article>
+		</section>
+		<!-- people love taxdeck-->
+		<section class="services" id="ppl-luv">
+			<h2 class="title">people <span>&hearts;</span> taxdeck</h2>
+			<article id="luv">
+				<article>
+					<i class="bi bi-alarm-fill" id="iframe"></i>
+					<h3 class="sub-head">On-Time Delivery</h3>
+					<p>We respect your time. Passion drives us. Our services will reflect the same.</p>
+				</article>
+				<article>
+					<i class="bi bi-eye-fill" id="iframe"></i>
+					<h3 class="sub-head">100% Transparency</h3>
+					<p>We believe in empowering you. We make sure you are up to date on the progress.</p>
+				</article>
+				<article>
+					<i class="bi bi-file-check-fill" id="iframe"></i>
+					<h3 class="sub-head">Customer Priority</h3>
+					<p>Dedicated Customer representative available 24 Hrs to help you with any difficulty.</p>
+				</article>
+				<article>
+					<i class="bi bi-hand-thumbs-up-fill" id="iframe"></i>
+					<h3 class="sub-head">Simple and Easy</h3>
+					<p>You don’t need to worry at all. We handle all the complexities on your behalf.</p>
+				</article>
+			</article>
+		</section>
+	</main>
+	<footer id="footer">
+		<img src="..\..\Styles\images\wave2.png" class="footer-img"/>
+		<section class="container">
+			<article class="row">
+                <article class="col-md-3 footer-box">
+					<img src="..\..\Styles\images\logo.png">
+                    <p>Taxdeck offers an extensive range of professional services and a high degree of spe-cialization. We serve all type of companies.</p>
+				</article>
+				<article class="col-md-3 footer-box">
+					<p><b>CONTACT US</b></p>
+					<p><i class="bi bi-geo-alt"></i><a class="footer-col" href="#"> World Trade Center, Hydrebad</a></p>
+                    <p><i class="bi bi-telephone-outbound-fill"></i><a class="footer-col" href="#"> +91 8309953643</a></p>
+                    <p><i class="bi bi-envelope"></i><a class="footer-col" href="#"> thetaxdeck@gmail.com</a></p>
+				</article>
+                <article class="col-md-2 footer-box">
+					<p><b>GET HELP</b></p>
+                    <p><a class="footer-col" href="#"> About Us</a></p>
+                    <p><a class="footer-col" href="#"> Contact Us</a></p>
+                    <p><a class="footer-col" href="#"> Privacy Policy</a></p>
+                    <p><a class="footer-col" href="#"> Terms of Use</a></p>
+				</article>
+                
+                <article class="col-md-3 footer-box">
+					<p><b>FOLLOW US</b></p>
+                    <p><i class="bi bi-facebook"></i><a class="footer-col" href="#"> Facebook</a></p>
+                    <p><i class="bi bi-twitter"></i><a class="footer-col" href="#"> Twitter</a></p>
+                    <p><i class="bi bi-instagram"></i><a class="footer-col" href="#"> Instagram</a></p>
+				</article>
+                
+			</article>
+			<hr>
+			<p class="copyright">Copyrights&#169; 2023 - TAXDECK PRIVATE LIMITED. All rights reserved</p>
+		</section>
+	</footer>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+	<script src="..\..\Styles\script.js"></script>
+</body>
+</html>
