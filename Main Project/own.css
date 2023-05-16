@@ -1,0 +1,271 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* **********************************   Nav Bar *************************** */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, rgba(180,195,131,1) 5%, rgba(17,172,159,1) 50%);
+    /* background-image: linear-gradient(to right, rgb(145, 51, 97) 25%, rgb(17, 172, 159) 75%); */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+
+.nav-items ul li {
+    list-style-type: none;
+    font-size: 22px;
+}
+
+.sign-area i {
+    margin-right: 10px;
+}
+
+.sign-area button {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#log a {
+    text-decoration: none;
+    color: black;
+}
+
+.sign-area button:hover {
+    background-color: rgb(17, 172, 159);
+}
+
+
+/* ***************************** Foods ****************************************** */
+.foods {
+    width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.foods h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.food-head {
+    font-family: mv boli;
+    color: rgb(139, 111, 61);
+}
+
+.flex-food {
+    display: flex;
+}
+
+.box {
+    width: 20rem;
+    border: 1px solid  rgb(17, 172, 159);
+    margin: 25px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background-color:  rgb(17, 172, 159);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.box img {
+    border-radius: 20px;
+    width: 15rem;
+}
+
+.box p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sub-title::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color:  rgb(17, 172, 159);
+    display: block;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+
+/* ****************** show food ****************** */
+
+.products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-preview .preview {
+    display: none;
+    padding: 2rem;
+    /* text-align: center; */
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    margin-top: 5rem;
+    width: 60rem;
+    height: 33rem;
+    border-radius: 20px;
+}
+.pre-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#x {
+    font-size: 3rem;
+}
+.pre-img{
+    position: relative;
+    top: 15px;
+}
+.pre-img h3{
+    margin: 10px;
+}
+.products-preview .preview.active {
+    display: inline-block;
+}
+.products-preview .preview img {
+    height: 15rem;
+}
+
+.products-preview .preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    /* font-size: 2rem; */
+}
+
+.products-preview .preview .fa-times:hover {
+    transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+    color: #444;
+    padding: .5rem 0;
+    /* font-size: 2rem; */
+}
+
+.products-preview .preview .stars {
+    padding: 1rem 0;
+    /* font-size: 1.7rem; */
+}
+
+.products-preview .preview .stars i {
+    color: #27ae60;
+}
+
+.products-preview .preview .stars span {
+    color: #999;
+}
+
+.products-preview .preview p {
+    line-height: 1.5;
+    padding: 1rem 0;
+    /* font-size: 1.6rem; */
+    color: #777;
+}
+
+.products-preview .preview .price {
+    padding: 1rem 0;
+    /* font-size: 2.5rem; */
+    color: #27ae60;
+}
+
+.products-preview .preview .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a {
+    text-align: center;
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: .1rem solid #444;
+    border-radius: 10px;
+}
+
+.products-preview .preview .buttons a.cart {
+    background: #444;
+    color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover {
+    background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+    background: #444;
+    color: #fff;
+}
+.locat{
+    display: flex; 
+    justify-content: space-between;
+}
+iframe{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
